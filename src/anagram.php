@@ -28,7 +28,7 @@
     {
       $outputArray = [];
       $arrayOfWords = explode(" ",$this->words);
-      for ($i = count($arrayOfWords);$i >= 0; $i--){
+      for ($i = count($arrayOfWords)-1;$i >= 0; $i--){
         if (!$this->isAnagram($i)){
           array_push($outputArray, $arrayOfWords[$i]);
         }
